@@ -4,7 +4,8 @@ The beginnings of SQL. For the intial chapters I will be using the classical mod
 
 
 ### SELECT & FROM 
-****syntax*
+****syntax****
+
 SELECT column_name, column_name2, column_name3 etc 
 FROM table_name 
 WHERE condition e.g. name ='Glen'
