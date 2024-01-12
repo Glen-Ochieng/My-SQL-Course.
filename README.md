@@ -13,4 +13,5 @@ AND/OR condition2 etc
 
 
 *Hint*
+
 At the end of one query, put a semicolon to start a new line of query.
