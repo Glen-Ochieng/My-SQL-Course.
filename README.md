@@ -11,6 +11,6 @@ FROM table_name
 WHERE condition e.g. name ='Glen'  
 AND/OR condition2 etc 
 
-*Hint*
 
+*Hint*
 At the end of one query, put a semicolon to start a new line of query.
