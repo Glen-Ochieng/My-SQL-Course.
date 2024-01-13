@@ -46,3 +46,14 @@ This is an extremely useful command that works kinda like * in STATA meaning you
 
 *Snytax*
 WHERE columnname LIKE '%value prefix or suffix %'
+
+### ORDER BY
+Order by arranges all the rows of the dataset by the the order of a particular column/variable
+
+*Snytax*
+Order usually comes last in the command chain.
+SELECT
+FROM
+ORDER BY column1
+
+
