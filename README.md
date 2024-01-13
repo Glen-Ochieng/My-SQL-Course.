@@ -17,9 +17,6 @@ AND/OR condition2 etc
 At the end of one query, put a semicolon to start a new line of query.
 If you start by writing the FROM statement first, when you write the SELECT statement the columnnames will be autosuggested.
 
-
-
-
 #### Tasks
 1. All records where customers last name is not Young.
 2. Show customername, first name, last name, phone, city and country where first name is Julie and she is from USA.
@@ -37,4 +34,11 @@ WHERE--- IN
 ('value1',
 'value2'
 'value n')
+
+### DISTINCT
+If you have a column with multiple column entries you can use the code distict before the colummn name to display only unique observations from that column
+
+*Snytax*
+SELECT DISTICNT(columnname)
+
 
