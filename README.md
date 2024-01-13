@@ -29,6 +29,7 @@ This is is a very useful command for extracting single or multiple specific valu
 
 *Snytax*
 SELECT --- 
+
 FROM --- 
 WHERE--- IN 
 ('value1',
@@ -69,9 +70,13 @@ This is used to join two tables on only columns they have in common
 *Snytax* 
 
 SELECT--- 
+
 FROM table1'table1name' 
 INNER JOIN table2'table2name' 
 ON table1.'table1key'='table2 table2.key'
 
+##### NB
+
+Do not forget the dots on the on statement.
 A shortcut however to writing table1 and table2 is to write t1 and t2 in stead. 
 Additionally, the phrase, 'inner join' could be replaced with just join. But coding best practices advice using it in full especially if you are still learning.
