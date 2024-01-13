@@ -17,9 +17,24 @@ AND/OR condition2 etc
 At the end of one query, put a semicolon to start a new line of query.
 If you start by writing the FROM statement first, when you write the SELECT statement the columnnames will be autosuggested.
 
+
+
+
 #### Tasks
 1. All records where customers last name is not Young.
 2. Show customername, first name, last name, phone, city and country where first name is Julie and she is from USA.
 3. First name and last name for customers from Norway or Sweden.
 4. Show all columns for customers from the USA or UK with surname Brown
 5. For employees who are sales reps, display their email.
+
+### IN & NOT IN 
+This is is a very useful command for extracting single or multiple specific values.
+
+*Snytax*
+SELECT ---
+FROM ---
+WHERE--- IN
+('value1',
+'value2'
+'value n')
+
