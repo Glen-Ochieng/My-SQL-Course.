@@ -39,6 +39,6 @@ WHERE--- IN
 If you have a column with multiple column entries you can use the code distict before the colummn name to display only unique observations from that column
 
 *Snytax*
-SELECT DISTICNT(columnname)
+SELECT DISTICNT columnname
 
 
