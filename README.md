@@ -59,4 +59,6 @@ SELECT
 FROM
 ORDER BY column1
 
+*Note*
 
+To get it in descending order you add desc at the end of the order by statement i.e. ORDER BY column1 desc
