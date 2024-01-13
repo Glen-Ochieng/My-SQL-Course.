@@ -66,7 +66,7 @@ To get it in descending order you add desc at the end of the order by statement 
 ### INNER JOIN
 This is used to join two tables on only columns they have in common
 
-*Snytax*
+*Snytax* 
 SELECT---
 FROM table1'table1name' 
 INNER JOIN table2'table2name' 
