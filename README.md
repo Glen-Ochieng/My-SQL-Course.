@@ -68,6 +68,8 @@ This is used to join two tables on only columns they have in common
 
 *Snytax*
 SELECT---
-FROM table1 
-INNER JOIN table2 
-ON table1.key=table2.key
+FROM table1'table1name' 
+INNER JOIN table2'table2name' 
+ON table1.'table1key'='table2 table2.key'
+
+A shortcut however to writing table1 and table2 is to write t1 and t2 in stead. 
