@@ -28,9 +28,9 @@ If you start by writing the FROM statement first, when you write the SELECT stat
 This is is a very useful command for extracting single or multiple specific values.
 
 *Snytax*
-SELECT ---
-FROM ---
-WHERE--- IN
+SELECT --- 
+FROM --- 
+WHERE--- IN 
 ('value1',
 'value2'
 'value n')
@@ -67,7 +67,8 @@ To get it in descending order you add desc at the end of the order by statement 
 This is used to join two tables on only columns they have in common
 
 *Snytax* 
-SELECT---
+
+SELECT--- 
 FROM table1'table1name' 
 INNER JOIN table2'table2name' 
 ON table1.'table1key'='table2 table2.key'
