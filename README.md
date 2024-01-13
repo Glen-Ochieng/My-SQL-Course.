@@ -41,4 +41,8 @@ If you have a column with multiple column entries you can use the code distict b
 *Snytax*
 SELECT DISTICNT columnname
 
+### LIKE %%
+This is an extremely useful command that works kinda like * in STATA meaning you don't need to type the entire sentence. 
 
+*Snytax*
+WHERE columnname LIKE '%value prefix or suffix %'
