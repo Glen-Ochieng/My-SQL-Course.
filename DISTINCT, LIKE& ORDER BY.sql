@@ -1,3 +1,6 @@
+select distinct *
+from  customers ;
+
 select *
 from customers 
 where city like '%New%' ;
