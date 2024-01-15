@@ -80,3 +80,9 @@ ON table1.'table1key'='table2 table2.key'
 Do not forget the dots on the on statement.
 A shortcut however to writing table1 and table2 is to write t1 and t2 in stead. 
 Additionally, the phrase, 'inner join' could be replaced with just join. But coding best practices advice using it in full especially if you are still learning.
+
+### LEFT JOIN
+This joins columns that are mutual in both tables and the columns that are in the table in the from statement.
+
+### RIGHT JOIN
+This joins columns that are mutual in both tables and the columns that are in the table in the right join statement.
