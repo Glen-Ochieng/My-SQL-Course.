@@ -94,3 +94,8 @@ This joins columns that are mutual in both tables and the columns that are in th
 
 ### RIGHT JOIN
 This joins columns that are mutual in both tables and the columns that are in the table in the right join statement.
+
+
+#### Tasks
+1. Show the customer first name, last name,orderdate and status for each order in the orders in the orders table with a matching customer table.
+2. Display the first name and last name of all customers, and the order date and the ordernumber of all their orders, even if the customers made no orders.
