@@ -65,7 +65,7 @@ ORDER BY column1
 To get it in descending order you add desc at the end of the order by statement i.e. ORDER BY column1 desc
 
 ### INNER JOIN/ JOIN
-This is used to join two tables on only columns they have in common
+This is used to join two tables on only columns they have in common.
 
 *Snytax* 
 
@@ -78,7 +78,7 @@ ON table1.'table1key'='table2 table2.key'
 ##### NB
 
 Do not forget the dots on the on statement.
-A shortcut however to writing table1 and table2 is to write t1 and t2 in stead. 
+A shortcut however to writing table1 and table2 is to write t1 and t2 in stead or a and b, and just anything that can be used as a marker. 
 Additionally, the phrase, 'inner join' could be replaced with just join. But coding best practices advice using it in full especially if you are still learning.
 
 #### Tasks
