@@ -81,6 +81,14 @@ Do not forget the dots on the on statement.
 A shortcut however to writing table1 and table2 is to write t1 and t2 in stead. 
 Additionally, the phrase, 'inner join' could be replaced with just join. But coding best practices advice using it in full especially if you are still learning.
 
+#### Tasks
+*Take notice of all places where all has or has not been used. Usually if it hasn't been used then it's probably and an inner join.*
+
+1. Display all the columns that are common in the two tables customers orders/ Show all customers who had orders.
+2. Display all customer names for each employee.
+3. Display (non-null)customer names for each employee who is a Sales Rep.
+4.Show customers who made a payment and on what date they made that payment.   
+
 ### LEFT JOIN
 This joins columns that are mutual in both tables and the columns that are in the table in the from statement.
 
