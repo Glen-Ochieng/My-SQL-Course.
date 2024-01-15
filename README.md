@@ -99,3 +99,29 @@ This joins columns that are mutual in both tables and the columns that are in th
 #### Tasks
 1. Show the customer first name, last name,orderdate and status for each order in the orders in the orders table with a matching customer table.
 2. Display the first name and last name of all customers, and the order date and the ordernumber of all their orders, even if the customers made no orders.
+
+### UNION AND UNION ALL
+Union is used to show the outputs for two querys i.e. select statements.
+Union shows non-duplicate observations from two tables where union all shows both duplicated and non-duplicated.
+
+*Syntax*
+
+SELECT columnname(s) from table1
+UNION
+SELECT columname(s) from table2
+
+BUT THE COLUMN NAMES FROM BOTH TABLES HAVE TO HAVE THE SAME NAME. THIS WHERE THE AS COMMAND TAKES CENTER-STAGE. IF THE TWO TABLES HAVE DIFFERENT NAMES THEN RENAME EITHER OF THE TABLES A COMMON NAME.
+
+### SUM
+Sums any column, It is usally best practice to rename that column something like 'totals.columnname' otherwise the column would just be named sum. 
+
+*Syntax*
+SELECT sum(columnname) as totals.columnname
+
+### GROUP BY
+Just like in R or stata. This particular clause is used in association with summary statistic function(usually after). Group by returns the output ordered by a particular column, usually the non-summary statistic column remaining. 
+
+*Syntax*
+SELECT column1, sum(column2) as column2totals
+FROM  
+GROUP BY column1
