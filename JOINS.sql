@@ -31,10 +31,5 @@ on t1.customerNumber= t2.customerNumber;
 select  t1.customerName , t2.amount,t2.paymentDate
 from customers t1
 left join payments t2
-on t1.customerNumber= t2.customerNumber;
-
-select  t1.customerName , t2.amount,t2.paymentDate
-from customers t1
-left join payments t2
 on t1.customerNumber= t2.customerNumber
 where amount is not null;
