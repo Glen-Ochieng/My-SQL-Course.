@@ -231,3 +231,37 @@ This shows the previous observation.
 SELECT
 LAG(column_name we want to order) OVER (PARTION BY the_column_we_want to _partition_by and  order by single_event_column) as previous/last_column_name
 FROM 
+
+
+### YEAR, MONTH AND DAY
+This are used to split a date column into the year, month and day
+
+*Syntax*
+SELECT year(date_column) as year, month(date_column) as month, day(date_column) as day 
+FROM
+
+### NOW()
+Shows today's date.
+
+*Syntax*
+SELECT now()
+
+### DATEDIFF
+Shows the difference in dates by days.
+
+*Syntax*
+SELECT DATEDIFF(column1,column2) as days_between_column_and_column2
+
+### DATE_ADD()
+Adds whatever number of days/months/years to a date_column of your choosing.
+
+*Syntax*
+DATE_ADD(date_column, interval value and time_unit) e.g. DATE_ADD(orderDate, interval 1 year) as year_later.
+
+### DATE_SUB()
+Subtracts whatever number of days/months/years to a date_column of your choosing.
+
+*Syntax*
+DATE_SUB(date_column, interval value and time_unit) e.g. DATE_SUB(orderDate, interval 1 year) as year_before
+
+*Don't confuse with datediff*
