@@ -164,10 +164,35 @@ SELECT avg(columnname) as relevantname
 FROM
 GROUP BY
 
-
 ## SUB QUERIES
-This involves query the result of a previous query
+This involves query the result of a previous query.
+The sub-query enters the FROM clause while in brackets and has to be named i.e. t1
 
 *Simple syntax*
 SELECT 
 FROM (query 1) t1<-table name of the perivous query
+
+
+
+### CTE(COMMON TABLE EXPRESSIONS)
+They are another way of performing a sub-query.
+
+*Syntax*
+WITH cte_name AS
+(sub-query)
+
+SELECT
+FROM cte_name
+
+#### CTE's can be chained to created two tables.For the subsuquent tables however don't use WITH  
+*Syntax*
+WITH cte_name AS
+(sub-query1), 
+
+cte_name2, as
+(sub_query2)
+
+SELECT
+FROM cte_name1 or cte_name2 etc.
+
+
