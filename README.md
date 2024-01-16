@@ -207,3 +207,27 @@ ELSE  output 4
 END as appropriate column name,
 other columns you wish to select
 FROM 
+
+### ROW NUMBER
+So this is useful if you have multiple observations of one kind and you wish to number these observations but ordered on another observations. Say, a customer has multiple orders and you wish to arrange these orders and then have them ordered by date. 
+
+*Syntax*
+SELECT
+ROW_NUMBER() OVER (PARTION BY the_multiple_observation_column order by single_event_column) as relevant_column_name
+FROM 
+
+### LEAD 
+This is one of those niche corners of knowledge which is very circumstancial in terms of use. So lead orders observations just like row_number but it starts at the next ordered observations. So, just like row_number by starting at number 2 and ending at NULL as there is no next observation after the last observation.
+
+*Syntax*
+SELECT
+LEAD(column_name we want to order) OVER (PARTION BY the_column_we_want to _partition_by and  order by single_event_column) as next_column_name
+FROM 
+
+### LAG
+This shows the previous observation.
+
+*Syntax*
+SELECT
+LAG(column_name we want to order) OVER (PARTION BY the_column_we_want to _partition_by and  order by single_event_column) as previous/last_column_name
+FROM 
