@@ -164,7 +164,7 @@ SELECT avg(columnname) as relevantname
 FROM
 GROUP BY
 
-## SUB QUERIES
+### SUB QUERIES
 This involves query the result of a previous query.
 The sub-query enters the FROM clause while in brackets and has to be named i.e. t1
 
@@ -265,3 +265,26 @@ Subtracts whatever number of days/months/years to a date_column of your choosing
 DATE_SUB(date_column, interval value and time_unit) e.g. DATE_SUB(orderDate, interval 1 year) as year_before
 
 *Don't confuse with datediff*
+
+### CAST
+Used to change the data_type of column to another data_type
+
+*Syntax*
+SELECT CAST(columnname as new_data_type) as new_data_type_name
+
+
+### SUBSTRING
+Returns a string of a specificied length i.e first 7 characters.Symbols count as characters. 
+
+*Syntax*
+SELECT SUBSTRING(columnname, starting_character_value, length(number of characters from starting_character_value to the end i.e if the end point is four chracters away from the starting character then the lenghth will be 5 ))
+
+
+### CONCAT
+Used to merge two or more columns together.
+
+*Syntax*
+SELECT CONCAT(column1,column2) as merged_columns
+
+
+
