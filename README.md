@@ -250,7 +250,7 @@ SELECT now()
 Shows the difference in dates by days.
 
 *Syntax*
-SELECT DATEDIFF(column1,column2) as days_between_column_and_column2
+SELECT DATEDIFF(end_date,start_date) as days_between_start_date and end_date.
 
 ### DATE_ADD()
 Adds whatever number of days/months/years to a date_column of your choosing.
