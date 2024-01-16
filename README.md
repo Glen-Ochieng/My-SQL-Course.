@@ -163,3 +163,11 @@ This returns the average of a column. Remember to rename.
 SELECT avg(columnname) as relevantname 
 FROM
 GROUP BY
+
+
+## SUB QUERIES
+This involves query the result of a previous query
+
+*Simple syntax*
+SELECT 
+FROM (query 1) t1<-table name of the perivous query
