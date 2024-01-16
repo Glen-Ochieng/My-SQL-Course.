@@ -131,8 +131,9 @@ GROUP BY column1
 SELECT round(columnname,no.of dp)
 
 ### HAVING
-Having is the where clause of the aggregate opertaions and comes after the group by but before order by
-
+Having is the where clause of the aggregate opertaions and comes after the group by but before order by.
+NB
+Having cannot work without group by!!
 *Syntax*
 
 SELECT sum(columnname) as totals
@@ -140,5 +141,25 @@ FROM
 GROUP BY 
 HAVING condtion 
 
+### COUNT
+Counts the no. of observations in a column. Just like other aggregate functions it should be renamed to something more meaningful.
 
+*Syntax*
+SELECT count(columnname) as n.columnname
+FROM  
+GROUP BY  
+### MAX AND MIN
+A usual remember to rename. 
 
+*Syntax*
+SELECT max(columnname)/min(columnname) as relevantname 
+FROM   
+GROUP BY  
+
+### AVG
+This returns the average of a column. Remember to rename. 
+
+*Syntax*
+SELECT avg(columnname) as relevantname 
+FROM
+GROUP BY
