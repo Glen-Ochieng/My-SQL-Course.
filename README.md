@@ -125,3 +125,20 @@ Just like in R or stata. This particular clause is used in association with summ
 SELECT column1, sum(column2) as column2totals
 FROM  
 GROUP BY column1
+
+### ROUND
+*Syntax*
+SELECT round(columnname,no.of dp)
+
+### HAVING
+Having is the where clause of the aggregate opertaions and comes after the group by but before order by
+
+*Syntax*
+
+SELECT sum(columnname) as totals
+FROM
+GROUP BY 
+HAVING condtion 
+
+
+
