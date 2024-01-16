@@ -195,4 +195,15 @@ cte_name2, as
 SELECT
 FROM cte_name1 or cte_name2 etc.
 
+### CASE
+This is the if-else of SQL that creates a column. It is used to do something if something else has happened.It can be used together with where clause. Remember to put end at the end and also the comma after the end columnname beacuse its just one of many columns you want to select. Just like SELECT column1, column2, etc.
 
+*Syntax*
+SELECT
+CASE WHEN condition 1 THEN output 1
+WHEN condition 2 THEN output 2
+WHEN condition 3 THEN output 3
+ELSE  output 4
+END as appropriate column name,
+other columns you wish to select
+FROM 
