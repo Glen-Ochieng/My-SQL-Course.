@@ -116,6 +116,7 @@ BUT THE COLUMN NAMES FROM BOTH TABLES HAVE TO HAVE THE SAME NAME. THIS WHERE THE
 Sums any column, It is usally best practice to rename that column something like 'totals.columnname' otherwise the column would just be named sum. 
 
 *Syntax*
+
 SELECT sum(columnname) as totals.columnname
 
 ### GROUP BY
@@ -127,13 +128,16 @@ FROM
 GROUP BY column1
 
 ### ROUND
+
 *Syntax*
+
 SELECT round(columnname,no.of dp)
 
 ### HAVING
 Having is the where clause of the aggregate opertaions and comes after the group by but before order by.
 NB
 Having cannot work without group by!!
+
 *Syntax*
 
 SELECT sum(columnname) as totals
@@ -145,6 +149,7 @@ HAVING condtion
 Counts the no. of observations in a column. Just like other aggregate functions it should be renamed to something more meaningful.
 
 *Syntax*
+
 SELECT count(columnname) as n.columnname
 FROM  
 GROUP BY  
@@ -152,6 +157,7 @@ GROUP BY
 A usual remember to rename. 
 
 *Syntax*
+
 SELECT max(columnname)/min(columnname) as relevantname 
 FROM   
 GROUP BY  
@@ -160,6 +166,7 @@ GROUP BY
 This returns the average of a column. Remember to rename. 
 
 *Syntax*
+
 SELECT avg(columnname) as relevantname 
 FROM
 GROUP BY
@@ -169,6 +176,7 @@ This involves query the result of a previous query.
 The sub-query enters the FROM clause while in brackets and has to be named i.e. t1
 
 *Simple syntax*
+
 SELECT 
 FROM (query 1) t1<-table name of the perivous query
 
@@ -178,6 +186,7 @@ FROM (query 1) t1<-table name of the perivous query
 They are another way of performing a sub-query.
 
 *Syntax*
+
 WITH cte_name AS
 (sub-query)
 
@@ -196,7 +205,7 @@ SELECT
 FROM cte_name1 or cte_name2 etc.
 
 ### CASE
-This is the if-else of SQL that creates a column. It is used to do something if something else has happened.It can be used together with where clause. Remember to put end at the end and also the comma after the end columnname beacuse its just one of many columns you want to select. Just like SELECT column1, column2, etc.
+This is the if-else of SQL that creates a column. It is used to do something if something else has happened.It can be used together with where clause. Remember to put end at the end and also the comma after the end columnname because its just one of many columns you want to select. Just like SELECT column1, column2, etc.
 
 *Syntax*
 
