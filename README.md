@@ -27,7 +27,7 @@ If you start by writing the FROM statement first, when you write the SELECT stat
 ### IN & NOT IN 
 This is is a very useful command for extracting single or multiple specific values.
 
-*Snytax*
+*Syntax*
 SELECT --- 
 
 FROM --- 
@@ -39,21 +39,21 @@ WHERE--- IN
 ### DISTINCT
 If you have a column with multiple column entries you can use the code distict before the colummn name to display only unique observations from that column
 
-*Snytax*
+*Syntax*
 
 SELECT DISTICNT columnname
 
 ### LIKE %%
 This is an extremely useful command that works kinda like * in STATA meaning you don't need to type the entire sentence. 
 
-*Snytax*
+*Syntax*
 
 WHERE columnname LIKE '%value prefix or suffix %'
 
 ### ORDER BY
 Order by arranges all the rows of the dataset by the the order of a particular column/variable
 
-*Snytax*
+*Syntax*
 
 Order usually comes last in the command chain.
 SELECT
@@ -67,7 +67,7 @@ To get it in descending order you add desc at the end of the order by statement 
 ### INNER JOIN/ JOIN
 This is used to join two tables on only columns they have in common.
 
-*Snytax* 
+*Syntax* 
 
 SELECT--- 
 
