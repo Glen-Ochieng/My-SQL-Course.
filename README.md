@@ -199,6 +199,7 @@ FROM cte_name1 or cte_name2 etc.
 This is the if-else of SQL that creates a column. It is used to do something if something else has happened.It can be used together with where clause. Remember to put end at the end and also the comma after the end columnname beacuse its just one of many columns you want to select. Just like SELECT column1, column2, etc.
 
 *Syntax*
+
 SELECT
 CASE WHEN condition 1 THEN output 1
 WHEN condition 2 THEN output 2
@@ -212,6 +213,7 @@ FROM
 So this is useful if you have multiple observations of one kind and you wish to number these observations but ordered on another observations. Say, a customer has multiple orders and you wish to arrange these orders and then have them ordered by date. 
 
 *Syntax*
+
 SELECT
 ROW_NUMBER() OVER (PARTION BY the_multiple_observation_column order by single_event_column) as relevant_column_name
 FROM 
@@ -220,6 +222,7 @@ FROM
 This is one of those niche corners of knowledge which is very circumstancial in terms of use. So lead orders observations just like row_number but it starts at the next ordered observations. So, just like row_number by starting at number 2 and ending at NULL as there is no next observation after the last observation.
 
 *Syntax*
+
 SELECT
 LEAD(column_name we want to order) OVER (PARTION BY the_column_we_want to _partition_by and  order by single_event_column) as next_column_name
 FROM 
@@ -228,6 +231,7 @@ FROM
 This shows the previous observation.
 
 *Syntax*
+
 SELECT
 LAG(column_name we want to order) OVER (PARTION BY the_column_we_want to _partition_by and  order by single_event_column) as previous/last_column_name
 FROM 
@@ -237,6 +241,7 @@ FROM
 This are used to split a date column into the year, month and day
 
 *Syntax*
+
 SELECT year(date_column) as year, month(date_column) as month, day(date_column) as day 
 FROM
 
@@ -244,24 +249,28 @@ FROM
 Shows today's date.
 
 *Syntax*
+
 SELECT now()
 
 ### DATEDIFF
 Shows the difference in dates by days.
 
 *Syntax*
+
 SELECT DATEDIFF(end_date,start_date) as days_between_start_date and end_date.
 
 ### DATE_ADD()
 Adds whatever number of days/months/years to a date_column of your choosing.
 
 *Syntax*
+
 DATE_ADD(date_column, interval value and time_unit) e.g. DATE_ADD(orderDate, interval 1 year) as year_later.
 
 ### DATE_SUB()
 Subtracts whatever number of days/months/years to a date_column of your choosing.
 
 *Syntax*
+
 DATE_SUB(date_column, interval value and time_unit) e.g. DATE_SUB(orderDate, interval 1 year) as year_before
 
 *Don't confuse with datediff*
@@ -270,6 +279,7 @@ DATE_SUB(date_column, interval value and time_unit) e.g. DATE_SUB(orderDate, int
 Used to change the data_type of column to another data_type
 
 *Syntax*
+
 SELECT CAST(columnname as new_data_type) as new_data_type_name
 
 
@@ -277,7 +287,8 @@ SELECT CAST(columnname as new_data_type) as new_data_type_name
 Returns a string of a specificied length i.e first 7 characters.Symbols count as characters. 
 
 *Syntax*
-SELECT SUBSTRING(columnname, starting_character_value, length(number of characters from starting_character_value to the end i.e if the end point is four chracters away from the starting character then the lenghth will be 5 ))
+
+SELECT SUBSTRING(columnname, starting_character_value, length(number of characters from starting_character_value to the end i.e if the end point is four characters away from the starting character then the length will be 5 ))
 
 
 ### CONCAT
