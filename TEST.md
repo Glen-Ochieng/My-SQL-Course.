@@ -24,5 +24,6 @@ select ltrim(department) from worker;
 #8. Fetch the unique values of department from the worker table and print its length
 select distinct department, length(department) from worker;
 
-#9. 
+#9. Print the first_name from worker table after replacing 'a'with 'A'
+select replace(first_name, 'a','A') from worker;
 ```
