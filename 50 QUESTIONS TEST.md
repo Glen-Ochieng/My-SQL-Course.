@@ -70,6 +70,17 @@ select concat(first_name,' ',last_name) from workers where salary between 490000
 select department, count(worker_id) as no_of_workers from worker group by department
 order by no_of_workers desc;
 
+#24. Print details of workers who are also managers
+select * from workers as w
+inner join title as t
+on w.worker_id=t.worker_ref_id
+where t.worker_title='Manager';
+
+#25 Fetch the number(more than 1) of the same titles in the ORG of different types.
+select worker_title, count(*) as count from title group by worker_title having count >1;
+
+#
+
 
 
 
