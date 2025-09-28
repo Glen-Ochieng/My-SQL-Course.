@@ -43,6 +43,37 @@ select * from worker in first_name("Vipul","Satish");
 select * from worker not in first_name('Vipul','Satish');
 
 #15. Print details of workers with departments name as 'Admin*'
-select * from worker where department like 'Admin%' 
+select * from worker where department like 'Admin%';
+
+#16. Print details of the workers whose first_names contains 'a'
+select * from workers where first_name like '%a%';
+
+#17. Print details of the workers whose first_name wends with an 'a'
+select * from workers where first_name like '%a';
+
+#18. Print details of the workers whose first_name ends with 'h' and contains six alphabets.
+select * from workers where first_name like '_____h';
+
+#19. Print details of workers whose salary lie between 100000 and 500000.
+select * from workers where salary between 1000000 and 500000;
+
+#20. Print deatils of the workers who joined in Feb'2014
+select * from workers where YEAR(joining_date)= 2014 AND MONTH(joining_date) = 02;
+
+#21. Write an SQL query to fetch the count of employees working in the department 'Admin'
+select department,count(*) from worker where department = 'Admin';
+
+#22. Fetch worker full names with salaries >=50000 and <=100000.
+select concat(first_name,' ',last_name) from workers where salary between 490000 and 101000;
+
+#23. Fetch the no. of workers for each department in descending order
+select department, count(worker_id) as no_of_workers from worker group by department
+order by no_of_workers desc;
+
+
+
+
+
+
 
 ```
