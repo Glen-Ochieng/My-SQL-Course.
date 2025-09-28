@@ -24,6 +24,10 @@ select ltrim(department) from worker;
 #8. Fetch the unique values of department from the worker table and print its length
 select distinct department, length(department) from worker;
 
-#9. Print the first_name from worker table after replacing 'a'with 'A'
-select replace(first_name, 'a','A') from worker;
+#9. Print the first_name from worker table after replacing 'a' with 'A'
+select replace(first_name,'a','A') from worker;
+
+#10. Print the first_name and last_name from worker into a single column complete_name. A space should seperate the two names.
+select concat (first_name, ' ', last_name) as complete_name from worker; 
+
 ```
