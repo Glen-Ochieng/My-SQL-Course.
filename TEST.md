@@ -5,4 +5,7 @@ select first_name as WORKER_NAME from worker;
 
 #2. Fetch "FIRST_NAME" from worker Table in upper case.
 select upper(first_name) from worker;
+
+#3. Fetch unique values of department from worker table.
+select distinct department from worker;
 ```
