@@ -8,4 +8,7 @@ select upper(first_name) from worker;
 
 #3. Fetch unique values of department from worker table.
 select distinct department from worker;
+
+#4. Print the first three characters of the first_name from worker table.
+select substring(first_name, 1, 3) from worker; 
 ```
