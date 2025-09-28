@@ -1,6 +1,6 @@
 For practice, you can go through these 50 sample SQL interview questions
 ```sql
-#1. Write an SQL query to fetch "FIRST_NAME" from worker table using the alias name as <WORKER_NAME>.
+#1. Fetch "FIRST_NAME" from worker table using the alias name as <WORKER_NAME>.
 select first_name as WORKER_NAME from worker;
 
 #2. Fetch "FIRST_NAME" from worker Table in upper case.
@@ -17,4 +17,12 @@ select instr(first_name,'B') from worker where first_name ='Amitabh';
 
 #6. Print the first_name from the worker table after removing the white spaces from the right side
 select rtrim(first_name) from worker;
+
+#7. Print the department from worker table after removing white spaces from the left side.
+select ltrim(department) from worker;
+
+#8. Fetch the unique values of department from the worker table and print its length
+select distinct department, length(department) from worker;
+
+#9. 
 ```
