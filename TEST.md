@@ -4,5 +4,5 @@ For practice, you can go through these 50 sample SQL interview questions
 select first_name as WORKER_NAME from worker;
 
 #2. Fetch "FIRST_NAME" from worker Table in upper case.
-select uppper(first_name) from worker;
+select upper(first_name) from worker;
 ```
