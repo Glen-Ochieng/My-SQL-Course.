@@ -40,6 +40,9 @@ select * from worker first_name, department desc;
 select * from worker in first_name("Vipul","Satish");
 
 #14. Print details of workers excluding first names, "Vipul" and "Satish" from worker table.
-select* from worker not in first_name('Vipul','Satish');   
+select * from worker not in first_name('Vipul','Satish');
+
+#15. Print details of workers with departments name as 'Admin*'
+select * from worker where department like 'Admin%' 
 
 ```
