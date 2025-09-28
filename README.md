@@ -306,5 +306,12 @@ Used to merge two or more columns together.
 *Syntax*
 SELECT CONCAT(column1,column2) as merged_columns
 
+## TRUNCATE TABLE
+Used to quickly delete all the rows in a table. 
+
+*Syntax*
+TRUNCATE TABLE tablename
+
+
 
 
