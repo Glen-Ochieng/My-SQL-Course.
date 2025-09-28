@@ -24,6 +24,12 @@ If you start by writing the FROM statement first, when you write the SELECT stat
 4. Show all columns for customers from the USA or UK with surname Brown
 5. For employees who are sales reps, display their email.
 
+## DESCRIBE
+Used to describe a table in terms of data types and keys.
+
+*Syntax*
+Describe table_name
+
 ### IN & NOT IN 
 This is is a very useful command for extracting single or multiple specific values.
 
