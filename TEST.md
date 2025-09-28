@@ -28,6 +28,14 @@ select distinct department, length(department) from worker;
 select replace(first_name,'a','A') from worker;
 
 #10. Print the first_name and last_name from worker into a single column complete_name. A space should seperate the two names.
-select concat(first_name, ' ', last_name) as complete_name from worker; 
+select concat(first_name, ' ', last_name) as complete_name from worker;
+
+#11. Print all the worker details from the worker table ordered by first_name ascedning
+select * from worker order by first_name;
+
+#12. Print all the worker details from the worker table ordered by first_name ascending and department descending.
+select * from worker first_name, department desc;
+
+#13.  
 
 ```
