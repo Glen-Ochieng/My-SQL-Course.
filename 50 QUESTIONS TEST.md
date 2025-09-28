@@ -36,6 +36,10 @@ select * from worker order by first_name;
 #12. Print all the worker details from the worker table ordered by first_name ascending and department descending.
 select * from worker first_name, department desc;
 
-#13.  
+#13. Print details for workers with the first name as "Vipul" and "Satish" from worker table.
+select * from worker in first_name("Vipul","Satish");
+
+#14. Print details of workers excluding first names, "Vipul" and "Satish" from worker table.
+select* from worker not in first_name('Vipul','Satish');   
 
 ```
