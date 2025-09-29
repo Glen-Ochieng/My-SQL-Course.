@@ -161,6 +161,10 @@ select * from worker where worker_id = (select min(worker_id) from worker);
 select * from worker
 order by worker_id desc limit 5;
 
-#45. 
+#45. Print the name of employees having the highest salary in each deparatment.
+select w.department, w.first_name, w.salary from
+(select max(salary) as maxsal, department from worker
+ group by department) temp #temp is an alias of the subquery
+inner join worker w on temp.department =w.department  and temp.maxsal = w.salary;
 
 ```
