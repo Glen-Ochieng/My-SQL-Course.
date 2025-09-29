@@ -117,4 +117,39 @@ select * from worker order by salary desc limit 4,1;
 The first number (4) is the offset — it skips the top 4 rows.
 The second number (1) is the number of rows to return — it fetches only the next row (i.e., the 5th one).*/
 
+#34. Determine the 5-th highest salary without using LIMIT keyword
+select salary from worker w1
+where 4 = (select count(distinct(w2.salary))from worker w2 where w2.salary>=w1.salary);
+
+#35. Fetch a list of employees with the same salary.
+select w1.* from worker w1, worker w2
+where w1.salary=w2.salary
+and w1.worker_id!=w2.worker_id;
+
+#36. Show the second highest salary from a table using the sub-query
+select max(salary) from worker
+where salary not in (select max(salary) from worker);
+
+#37. Show one row twice in results from a table
+select * from worker
+UNION ALL
+select * from worker
+order by worker_id;
+
+#38.List workers who do not get a bonus using worker_id
+select worker_id from worker
+where worker_id not in (select worker_ref_id from bonus); #worker_ref_id is the foreign key to worker_id of worker table
+
+#39. Fetch the first 50% records from a table
+select * from worker where worker_id <= (select count(worker_id)/2 from worker);
+
+#40.Fetch the departments that have less than 4 people in it.
+select department, count(department) as depCount from worker
+group by department having depCount < 4;
+
+#41. Show all the departments along with the number of people in there
+select department, count(department) as depCount from worker
+group by department;
+
+
 ```
