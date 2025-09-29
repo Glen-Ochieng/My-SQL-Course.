@@ -151,5 +151,16 @@ group by department having depCount < 4;
 select department, count(department) as depCount from worker
 group by department;
 
+#42. Show the last record from a table
+select * from worker where worker_id = (select max(worker_id) from worker); #assuming the lastest employee gets the latest employee_id
+
+#43 Fetch the first row of a table
+select * from worker where worker_id = (select min(worker_id) from worker);
+
+#44. Fetch the last five records from a table
+select * from worker
+order by worker_id desc limit 5;
+
+#45. 
 
 ```
