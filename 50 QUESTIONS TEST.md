@@ -100,8 +100,21 @@ using (worker_id);
 select worker.* from worker
 left join worker_clone
 using(worker_id)
-where worker_clone.worker_id is NULL; # uses everything from first table and only empty/ non matching entries in second table. Since worker_clone is not null then no values from the second table will appear 
+where worker_clone.worker_id is NULL; # uses everything from first table and only empty/ non matching entries in second table. Since worker_clone is not null then no values from the second table will appear
 
+#31. Show the current date and time
+select now();
+#OR
+select curdate(); #cur stands for current 
 
+#32. Show the top n (say 5) records of a table order by descending salary
+select * from worker order by salary desc limit 5;
+
+#33. Determine the nth(say 5 th) highest salary from a table
+select * from worker order by salary desc limit 4,1;  
+
+/*LIMIT 4, 1:
+The first number (4) is the offset — it skips the top 4 rows.
+The second number (1) is the number of rows to return — it fetches only the next row (i.e., the 5th one).*/
 
 ```
