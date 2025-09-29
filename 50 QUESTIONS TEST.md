@@ -76,13 +76,20 @@ inner join title as t
 on w.worker_id=t.worker_ref_id
 where t.worker_title='Manager';
 
-#25 Fetch the number(more than 1) of the same titles in the ORG of different types.
+#25. Fetch the number(more than 1) of the same titles in the ORG of different types.
 select worker_title, count(*) as count from title group by worker_title having count >1;
 
-#
+#26. Show only odd rows from a table
+select * from worker where MOD(worker_id,2) != 0;
+#OR
+select * from worker where MOD(worker_id,2)<> 0;
 
+#27. Show only the even rows of a table
+select * from worker where MOD(worker_id,2) = 0;
 
-
+#28. Write a query to clone a new table from another table
+create table worker_clone like worker # like makes the table have the same structure including columns and data types
+insert into worker_clone select * from worker; # values commmand is not needed for a full copy
 
 
 
