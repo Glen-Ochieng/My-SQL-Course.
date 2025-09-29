@@ -91,6 +91,16 @@ select * from worker where MOD(worker_id,2) = 0;
 create table worker_clone like worker # like makes the table have the same structure including columns and data types
 insert into worker_clone select * from worker; # values commmand is not needed for a full copy
 
+#29. Fetch interstecting records of two tables.
+select worker.* from worker
+inner join worker_clone
+using (worker_id);
+
+#30. Show all the records from one table that another table does not have
+select worker.* from worker
+left join worker_clone
+using(worker_id)
+where worker_clone.worker_id is NULL; # uses everything from first table and only empty/ non matching entries in second table. Since worker_clone is not null then no values from the second table will appear 
 
 
 
