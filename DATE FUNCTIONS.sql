@@ -13,3 +13,9 @@ select*,
 DATE_ADD(requiredDate, interval 1 year) as requiredDate_year_later,
 date_sub(requiredDate, interval 2 month) as requiredDate_2months_before
 from orders;
+
+/* The above codes add or subtracts specific intervals from one date. 
+However, we can also add and subtract two dates from each other.
+*/
+
+/*DATEDIFF*/
