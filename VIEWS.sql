@@ -11,3 +11,9 @@ WHERE condition;
 ORDER BY DOES NOT WORK WITH VIEWS.
 AS SUCH IT IS IMPORTANT TO SUBQUERY THE VIEW IF YOU WISH TO ODRER BY 
 */
+
+/* To drop a view, the syntax is similiar to dropping a table 
+
+Syntax
+DROP VIEW view_name
+*/
