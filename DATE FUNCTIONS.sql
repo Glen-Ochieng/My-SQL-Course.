@@ -26,4 +26,4 @@ Shows the difference in dates by days.
 *Syntax*
 SELECT DATEDIFF({days, months, minutes },start_date,end_date) as days_between_start_date and end_date.
 
-date_diff(days, order_date, delivery_date)
+date_diff(day, order_date, delivery_date)
