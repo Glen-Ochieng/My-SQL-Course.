@@ -11,4 +11,4 @@ select * from prices
 *which can also be written as*
 
 select * from prices
-WHERE price is between 50 and 60;
+WHERE price between 50 and 60;
