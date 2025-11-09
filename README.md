@@ -318,6 +318,11 @@ Used to quickly delete all the rows in a table.
 *Syntax*
 TRUNCATE TABLE tablename
 
+## CURRENT_TIMESTAMP
+Shows the current date and time of your location 
+
+*Syntax*
+current_timestamp
 
 
 
