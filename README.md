@@ -324,5 +324,14 @@ Shows the current date and time of your location
 *Syntax*
 current_timestamp
 
+## TOP
+Returns the top n values of a table. 
+
+*Syntax*
+select top n  * from table_name;
+
+*EG*
+select top 10 * from orders;
+
 
 
