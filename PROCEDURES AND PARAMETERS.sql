@@ -80,3 +80,7 @@ AS
 SELECT * FROM orders where unit_price> @price;
 
 EXECUTE demo_proc @price= 100;
+
+--OR
+EXECUTE demo_proc 100
+
