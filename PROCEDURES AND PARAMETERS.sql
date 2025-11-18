@@ -82,5 +82,24 @@ SELECT * FROM orders where unit_price> @price;
 EXECUTE demo_proc @price= 100;
 
 --OR
-EXECUTE demo_proc 100
+EXECUTE demo_proc 100;
 
+/*ATERNATIVELY
+
+IT CAN BE EASIER TO JUST PUT IN THE PRAMETER VALUE IN THE PROCEDURE AND THEN EXECUTE WITHOUT INSERTING THE 
+PARAMETER THERE.
+*/
+
+ALTER PROCEDURE demo_proc(@price DECIMAL(10,2)=100)
+AS
+SELECT * FROM orders where unit_price> @price;
+
+EXECUTE demo_proc;
+
+--MULTIPLE PARAMETERS 
+
+ALTER PROCEDURE demo_proc(@price DECIMAL(10,2)=100,@input_date DATE='1970-01-01')
+AS
+SELECT * FROM orders where unit_price> @price AND created_at > @date;
+
+EXECUTE demo_proc;
